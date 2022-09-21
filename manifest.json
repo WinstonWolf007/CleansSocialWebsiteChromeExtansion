@@ -1,0 +1,17 @@
+{
+    "name": "Cleans Social Website",
+    "description": "This extansion cleaned youtube, facebook pubs, youtube, facebook, instagram home video",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/", "https://www.facebook.com/*", "https://www.instagram.com/*"],
+        "css": ["./style.css"],
+        "js": ["script.js"]
+      }
+    ],
+    "permissions": ["activeTab", "tabs"],
+    "icons": {
+      "500": "./logo.png"
+    }
+}
